@@ -1,15 +1,15 @@
 3.1 REGISTER FOR AWS FREE TIER ACCOUNT:
 
-First Open your web browser and navigate to AWS Free Tier Page.
-On middle-click on Create a Free Account
- Issue the details which you want to use for login your AWS account and click on Continue.
+1.First Open your web browser and navigate to AWS Free Tier Page.
+2.On middle-click on Create a Free Account
+3. Issue the details which you want to use for login your AWS account and click on Continue.
  • Email address: Provide the mail id which hasn’t registered yet with Amazon AWS.
  •Password: Type your password.
  • Confirm password: Authenticate the password.
  • AWS Account name: Choose a name for your account. You can change this name in your account settings after you sign up.
 Contact Information
 
-Select your AWS type (Profesional/ Personal) Fill in the correct information to validate your account if you’re going to create personal use then click on “personal Account” else use “Company Account”, Accepts the Terms and condition and then click on Create Account and Continue.
+4.Select your AWS type (Profesional/ Personal) Fill in the correct information to validate your account if you’re going to create personal use then click on “personal Account” else use “Company Account”, Accepts the Terms and condition and then click on Create Account and Continue.
 5. Payment and PAN information: In this step, you must fill in your credit card /Debit Card info and billing address and click on Secure Submit.
 6. In this step, it will take you to the payment gateway to validate your payment information and for your credit card verification, Amazon will charge the minimum price based on Country. Here I have provided India, so Amazon charged 2 INR.
 7. Phone verification: Here you will be taken to an identity verification page that will already have your phone number, so you just have to select either “Text message or Voice call” Provide a valid phone number, Solve the captcha and then click on Send SMS or Call Me Now(depending upon your selection).

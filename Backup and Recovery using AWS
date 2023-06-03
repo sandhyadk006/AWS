@@ -1,0 +1,161 @@
+3.1 REGISTER FOR AWS FREE TIER ACCOUNT:
+
+First Open your web browser and navigate to AWS Free Tier Page.
+On middle-click on Create a Free Account
+ Issue the details which you want to use for login your AWS account and click on Continue.
+ • Email address: Provide the mail id which hasn’t registered yet with Amazon AWS.
+ •Password: Type your password.
+ • Confirm password: Authenticate the password.
+ • AWS Account name: Choose a name for your account. You can change this name in your account settings after you sign up.
+Contact Information
+
+Select your AWS type (Profesional/ Personal) Fill in the correct information to validate your account if you’re going to create personal use then click on “personal Account” else use “Company Account”, Accepts the Terms and condition and then click on Create Account and Continue.
+5. Payment and PAN information: In this step, you must fill in your credit card /Debit Card info and billing address and click on Secure Submit.
+6. In this step, it will take you to the payment gateway to validate your payment information and for your credit card verification, Amazon will charge the minimum price based on Country. Here I have provided India, so Amazon charged 2 INR.
+7. Phone verification: Here you will be taken to an identity verification page that will already have your phone number, so you just have to select either “Text message or Voice call” Provide a valid phone number, Solve the captcha and then click on Send SMS or Call Me Now(depending upon your selection).
+8. After clicking on Send SMS or Call me Now, you will immediately receive a call or SMS from Amazon, for verification code, Enter your code then click on Verify Code.
+
+9. Support plan: AWS support offers a selection of plans to meet your business needs. Select your suitable plan then click continue.
+10. Registration Confirmation page.
+Once you completed all the above steps and processes. You’ll get the confirmation page as below. Now your account will be processed for activation. It may take somewhere between 30 minutes to 1 hour for you to receive an email confirmation that your Amazon Cloud Services account has been activated.
+
+
+3.1.1 To launch an instance:
+
+
+Open the Amazon EC2 console at https://console.aws.amazon.com/ec2/.
+From the console dashboard, choose Launch Instance.
+The Choose an Amazon Machine Image (AMI) page displays a list of basic configurations, called Amazon Machine Images (AMIs), that serve as templates for your instance. Select an HVM version of Amazon Linux 2. Notice that these AMIs are marked "Free tier eligible."
+On the Choose an Instance Type page, you can select the hardware configuration of your instance. Select the t2.micro instance type, which is selected by default. The t2.micro instance type is eligible for the free tier. In Regions where t2.micro is unavailable, you can use a t3.micro instance under the free tier. 
+On the Choose an Instance Type page, choose Review and Launch to let the wizard complete the other configuration settings for you.
+On the Review Instance Launch page, under Security Groups, you'll see that the wizard created and selected a security group for you. You can use this security group, or alternatively you can select the security group that you created when getting set up using the following steps:
+Choose Edit security groups.
+                      2. On the Configure Security Group page, ensure that Select an  existing security group is selected.
+                      3.Select your security group from the list of existing security groups, and then choose Review and Launch.
+On the Review Instance Launch page, choose Launch.
+When prompted for a key pair, select Choose an existing key pair, then select the key pair that you created when getting set up.
+Don't select Proceed without a key pair. If you launch your instance without a key pair, then you can't connect to it. When you are ready, select the acknowledgement check box, and then choose Launch Instances.
+A confirmation page lets you know that your instance is launching. Choose View Instances to close the confirmation page and return to the console.
+On the Instances screen, you can view the status of the launch. It takes a short time for an instance to launch. When you launch an instance, its initial state is pending. After the instance starts, its state changes to running and it receives a public DNS name. (If the Public IPv4 DNS column is hidden, choose the settings icon ( ) in the top-right corner, toggle on Public IPv4 DNS, and choose Confirm.
+It can take a few minutes for the instance to be ready so that you can connect to it. Check that your instance has passed its status checks; you can view this information in the Status check column.
+3.2. How can I create and connect to an Amazon EC2 instance?
+Create an AWS account.
+Open the Amazon EC2 console.
+From the Region selector in the navigation bar, select the Region that is geographically closest to you. All resources that are required to run your instance must be created in the same Region.
+You need a key pair to transfer files between your computer and the instance. From the EC2 Dashboard, select Key Pairs to create key pairs. For detailed steps to create key pairs, see Create a key pair. 
+After status checks are successfully completed and the Instance state status is running, connect to your instance.
+To avoid unnecessary charges on your account, stop your instance when you're not using it. While using Free Tier, be sure that you understand the pricing guidelines. When you are finished with your instance, clean up by terminating the instance.
+
+
+3.3.How to create an Backup plan?
+
+
+
+1.1.Create an AWS account.
+1.  Log in to the AWS Management Console, and open the AWS Backup console.
+2.1 — Configure the services used with AWS Backup 
+2. On the navigation pane on the left side of the AWS Backup console, under My account choose Settings.
+3. On the Service opt-in page, select the Configure resources button.
+2.2 — Configure the services used with AWS Backup (continued)
+4. On the Configure resources page, use the toggle switches to enable or disable the services used with AWS Backup. In this case, select EC2. Choose Confirm when your services are configured. WS Backup is a fully-managed service that makes it easy to centralize and automate data protection across AWS services, in the cloud, and on premises. Using this service, you can configure backup policies and monitor activity for your AWS resources in one place. It allows you to automate and consolidate backup tasks that were previously performed service-by-service, and removes the need to create custom scripts and manual processes. With a few clicks in the AWS Backup console, you can automate your data protection policies and schedules.
+5.AWS Backup does not govern backups you take in your AWS environment outside of AWS Backup. Therefore, if you want a centralized, end-to-end solution for business and regulatory compliance requirements, start using AWS Backup today.
+6. AWS resources that you're backing up should be in the Region you are using for this tutorial, and resources must all be in the same AWS Region (however, see step 3.2 for information on cross-Region copy). This tutorial uses the US East (N. Virginia) Region (us-east-1).
+
+
+2.3— Create an on-demand backup Job of an Amazon EC2 instance
+
+
+7. Back in the AWS Backup console, under My account, select Dashboard on the left navigation pane. Then, select the Create on-demand backup button.
+8. On the Create on-demand backup page, choose the Resource type that you want to back up; for example, choose EC2 for Amazon EC2 instance.
+9. Choose the Instance ID of the EC2 resource that you want to protect.
+10. In the Backup window section, select Create backup now. This initiates a backup immediately and enables you to see your saved resource sooner on the Protected resources page.
+11. In the Retention period section, select Days and type the number of days you want to retain the backups for. This example uses a Retention period of 7 days.
+12. In the Backup vault section, select one of the pre-existing vaults and continue with step 2.2, or follow step 2.2.1 to create a new backup vault.
+2.4. — Create a backup vault
+13.Instead of using the default backup vault that is automatically created for you on the AWS Backup console, you can create specific backup vaults to save and organize groups of backups in the same vault. 
+14.On the Create on-demand backup page, choosing Create new Backup vault opens a new page to create a vault, and you are returned to the Create on-demand backup page after you are finished.
+
+15.You can also go to the AWS Backup console in the navigation pane on the left and select Backup vaults and then Create backup vault to create a backup vault. 
+16.Enter a name for your backup vault. You can name your vault to reflect what you will store in it, or to make it easier to search for the backups you need. For example, you could name it "webappBackups."
+17.Select an AWS Key Management Service (KMS) key. You can use either a key that you already created, or select the default AWS Backup master key.
+18. Optionally, add tags that will help you search for and identify your backup vault.
+19.Back on the Create on-demand backup page, after you have selected an existing backup vault or created a new one, choose the Default role for the IAM role, as shown in the following screenshot, or Choose an IAM role. 
+	Note: If the AWS Backup Default role is not present in your account, then one is created with the correct permissions.
+20.Select the Create on-demand backup button. This takes you to the Jobs page, where you will see a list of jobs.
+
+2.5.— Checking job details
+
+
+21.In the Jobs panel under My account, ensure the Backup jobs tab is selected. 
+22.Choose the Backup job ID for the resource that you chose to back up to see the details of that job.
+23.After some time, the Status of the backup job will go from Created to Completed.
+3.1 — Configure the services used with AWS Backup
+24.On the navigation pane on the left side of the AWS Backup console, under My account, choose Settings.
+25.On the Service opt-in page, select the Configure resources button.
+26.On the Configure resources page, use the toggle switches to enable or disable the services used with AWS Backup. Choose Confirm when your services are configured.
+27.AWS resources that you're backing up should be in the Region you are using for this tutorial, and resources must all be in the same AWS Region (however, see step 3.2 for information on cross-Region copy). This tutorial uses the US East (N. Virginia) Region (us-east-1). 
+
+3.2	— Configure a backup plan for an Amazon EC2 instance
+
+
+28. In the AWS Backup console, under My account, select Backup plans on the left rail, and then select the Create Backup plan button.
+29. select the Create Plan button. Once the plan is created, tags and resources can be added to the backup plan.
+3.4.How to create a Backup vault?
+3.2.1	— Create a backup vault
+30.In the AWS Backup console, in the left navigation pane under My account, select Backup vaults.
+31.Select Create backup vault.
+32.Enter a name for your backup vault. You can name your vault to reflect what you will store in it, or to make it easier to search for the backups you need. For example, you could name it "WebappBackups."
+33.Select an AWS KMS key. You can use either a key that you already created, or select the default AWS Backup master key.
+34. Optionally, add tags that will help you search for and identify your backup vault. 
+
+
+3.2.3— Assign resources to the backup plan
+
+
+35.When you assign a resource to a backup plan, that resource is backed up automatically according to the backup plan. The backups for that resource are managed according to the backup plan. You can assign resources using tags or resource IDs. Using tags to assign resources is a simple and scalable way to back up multiple resources.
+36.Select the created backup plan and select the Assign resources button. 
+37. Resource assignment name: Provide a resource assignment name.
+38.IAM Role: When creating a tag-based backup plan, if you choose a role other than Default role, make sure that it has the necessary permissions to back up all tagged resources. AWS Backup tries to process all resources with the selected tags. If it encounters a resource that it doesn't have permission to access, the backup plan fails.
+39.Assign by: You can select Tags or Resource ID. For a tags-based resource assignment, provide the key-value pair of the Amazon EC2 instance. 
+40.Select Assign resources. The backup plan will then have the resources assigned to it.
+41. Navigate to the AWS Backup console and select Jobs in the left navigation pane. Once there, you will be able to see your Backup jobs.
+3.5 Restore an Amazon EC2 instance using AWS Backup
+
+
+4.1	— Restoring your Amazon EC2 instance using AWS Backup
+
+
+42.Navigate to the backup vault that was selected in the backup plan and select the latest completed backup. To restore the EC2 instance, click on the recovery point ARN and select the Restore button.
+43. The restore of the ARN will bring you to a Restore backup screen that will have the configurations for the EC2 instance using the backed-up AMI and all the attached EBS volumes.
+44.In the Network settings pane, accept the defaults or specify the options for the Instance type, Virtual Private Cloud (VPC), Subnet, Security groups, and Instance IAM Role settings.
+45.This example proceeds with no IAM role. The IAM role can be applied to the EC2 instance after the restore process is completed. 
+46.To successfully do a restore with the original instance profile, you must edit the restore policy. If you apply an instance profile during the restore, you have to update the operator role and add the Pass Role permissions of the underlying instance profile role to Amazon EC2. The default service role created by AWS Backup manages creating and restoring backups. It has two managed policies, AWSBackupServiceRolePolicyForBackup and AWSBackupServiceRolePolicyForRestores. It also allows “Action”: “iam:PassRole” to launch EC2 instances as part of a restore. 
+47.In the Restore role pane, accept the Default role, or Choose an IAM role to specify the IAM role that AWS Backup will assume for this restore. 
+48.In the Advanced settings pane, accept the defaults or specify the options for Shutdown behavior, Enable termination protection, Placement group, T2/T3 Unlimited, Tenancy, and User data settings. This section is used to customize shutdown and hibernation behavior, termination protection, placement groups, tenancy, and other advanced settings. 
+49.AWS Backup will use the SSH key pair used at time of backup to automatically perform your restore.
+50.After specifying all of your settings, choose Restore backup. The Restore jobs pane will appear, and a message at the top of the page will provide information about the restore job.
+
+4.2	— Checking for your restored Amazon EC2 instance
+
+
+51.Check for your restored backup job under Restore jobs in the  AWS Backup console.
+52.Once the job status appears as completed, navigate to the Amazon EC2 console and the select Instances on the left hand pane to see the restored EC2 instance. The EC2 instance is restored using the backup of the AMI and the attached EBS volume.
+53.You can now connect to the public IP address if you restored your Amazon EC2 instance using SSH.
+
+
+3.6 Deleting the Amazon EC2 instance
+
+
+54.Open the Amazon EC2 console. 
+55.In the navigation pane on the left, choose Instance under Instances.
+56.Select the restored EC2 instance, and choose Instance state, then Terminate instance.
+57.Choose Terminate when prompted for confirmation.
+3.7  Delete the AWS Backup recovery point
+58.Open the AWS Backup console and navigate to the vault where the recovery point is stored.
+59.Select the recovery point, then select Delete.
+
+Note: This process can take several seconds to complete.
+60.Thus, the process is terminated successfully.
+
+
+                                             

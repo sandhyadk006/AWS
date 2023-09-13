@@ -104,7 +104,7 @@ Contributions are welcome! If you want to contribute to this project, please fol
 
 4. Test your changes thoroughly.
 
-5. Submit a pull request with a detailed description of your changes and the problem they solve.
+5. Submit a pull request with a detailed description of your changes and the problem to solve.
 
 ## License
 
